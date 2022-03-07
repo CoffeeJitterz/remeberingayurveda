@@ -10,6 +10,9 @@ export default function Header() {
         <Link to='/about'>
             ABOUT
         </Link>
+        <Link to='/events'>
+            EVENTS
+        </Link>
         <Link to='/blog'>
             BLOG
         </Link>
