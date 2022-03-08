@@ -4,6 +4,7 @@ import About from './pages/About';
 import Events from './pages/Events';
 import Blog from './pages/Blog';
 import Control from './components/Control';
+import EventPanel from './components/EventPanel';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/events' element={<Events />} />
         <Route path='/blog' element={<Blog />}/>
         <Route path='/control' element={<Control />} />
+        <Route path='/eventpanel' element={<EventPanel />} />
       </Routes>
     </div>
     </Router>
