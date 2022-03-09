@@ -15,14 +15,15 @@ export default function EventPanel() {
 
     // const output = {title, description}
   return (
-    <div>
-        <form onSubmit={formHandler}>
+    <div className='event_panel_container'>
+        <form className='event_panel_form' onSubmit={formHandler}>
         <h3>EventPanel</h3>
-        <input name='Title' placeholder={title} value={title} onChange={e => {setTitle(e.target.value)}}/>
-        <input name='Description' placeholder={description} value={description} onChange={e => setDescription(e.target.value)}/>
-        <h6>upload image</h6>
-
-        <input type='submit'/>
+            <div className='event_controls'>
+                <input name='Title' type='text' placeholder={title} value={title} onChange={e => {setTitle(e.target.value)}}/>
+                <textarea name="paragraph_text" cols="50" rows="10" value={description} onChange={e => setDescription(e.target.value)}/>
+                 <h6>upload image</h6>
+            </div>
+        <input type='submit' className='button' />
         </form>
     </div>
   )
