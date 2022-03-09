@@ -3,14 +3,13 @@ import {useState} from 'react'
 export default function EventPanel() {
     const [title, setTitle] = useState('Title')
     const [description, setDescription] = useState('Description')
-    console.log(title, description)
-
     const [output, setOutput] = useState({title: 'default', desctiption: 'default'})
-    console.log(output)
 
     const formHandler = e => {
         e.preventDefault()
         setOutput({title, description})
+
+        console.log(output)
     }
 
     // const output = {title, description}
