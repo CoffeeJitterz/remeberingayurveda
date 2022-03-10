@@ -10,6 +10,7 @@ export default function Home() {
         <Card>
         <h1>HOME</h1>
         <About />
+        <h3>Upcoming Events!</h3>
         <EventFeed expand={null}/>
         </Card>
     </div>
