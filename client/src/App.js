@@ -1,6 +1,5 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About';
 import Events from './pages/Events';
 import Blog from './pages/Blog';
 import Control from './components/Control';
