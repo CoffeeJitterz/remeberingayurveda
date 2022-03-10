@@ -1,6 +1,6 @@
-import Post from "./Post"
+import Blog from "./Blog"
 
-export default function Postfeed() {
+export default function BlogFeed() {
 
 const posts = [
     {title: 'Post 1',
@@ -19,7 +19,7 @@ const posts = [
 ] 
 
 const output = posts.map((item) => {
-    return <Post 
+    return <Blog 
     title={item.title}
     date={item.date}
     body={item.body}
