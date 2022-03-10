@@ -35,7 +35,7 @@ const events = [
             description={event.description}
             image={event.image}
             />
-        } else if (!expand) {
+        } else {
             return <Event
             title={event.title}
             date={event.date}
