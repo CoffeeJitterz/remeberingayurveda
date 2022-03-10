@@ -1,6 +1,6 @@
 import Event from "./Event"
 
-export default function EventFeed() {
+export default function EventFeed({expand}) {
 
 // const events = [
 // {title, date, description, image}
@@ -27,15 +27,21 @@ const events = [
     }
 ]
 
-const output = events.map((event) => {
-    return <Event
-    title={event.title}
-    date={event.date}
-    description={event.description}
-    image={event.image}
-    />
-})
-
+    const output = events.map((event) => {   
+        if (expand) {
+            return <Event
+            title={event.title}
+            date={event.date}
+            description={event.description}
+            image={event.image}
+            />
+        } else if (!expand) {
+            return <Event
+            title={event.title}
+            date={event.date}
+            />
+        }
+    })
   return (
 <div>
    {output}

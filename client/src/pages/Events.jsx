@@ -3,11 +3,12 @@ import Card from "../shared/Card"
 import EventFeed from "../components/EventFeed"
 
 export default function Events() {
+
   return (
     <div>
         <Header />
         <Card>
-        <EventFeed />
+        <EventFeed expand={true} />
         </Card>
         
     </div>
