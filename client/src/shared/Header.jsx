@@ -11,13 +11,14 @@ export default function Header() {
         Ayurveda
             </NavLink >
         </div>
-        <NavLink to='/events'>
+        <div>
+        <NavLink to='/events' className='events_blog'>
             EVENTS
         </NavLink>
-        <NavLink to='/blog'>
+        <NavLink to='/blog' className='events_blog'>
             BLOG
         </NavLink>
-
+        </div>
     </div>
   )
 }
