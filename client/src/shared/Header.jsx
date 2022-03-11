@@ -1,18 +1,19 @@
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 export default function Header() {
   return (
-    <div>
-        <h1>Remembering Ayurveda</h1>
-        <Link to='/'>
-            HOME
-        </Link >
-        <Link to='/events'>
+    <div className='header'>
+        
+            <NavLink to='/' className='remembering_ayurveda'>
+        Remembering Ayurveda
+            </NavLink >
+        <NavLink to='/events'>
             EVENTS
-        </Link>
-        <Link to='/blog'>
+        </NavLink>
+        <NavLink to='/blog'>
             BLOG
-        </Link>
+        </NavLink>
+
     </div>
   )
 }
