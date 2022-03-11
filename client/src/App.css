@@ -19,9 +19,15 @@
   text-decoration: none;
   
 }
-.remembering_ayurveda {
+.remembering {
   text-decoration: none;
   font-size: xxx-large;
+  font-family: 'Dancing Script';
+}
+.ayurveda {
+  text-decoration: none;
+  font-size: xxx-large;
+  font-family: 'Anton';
 }
 
 .event_panel_form {
