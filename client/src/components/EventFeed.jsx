@@ -44,7 +44,7 @@ const events = [
         }
     })
   return (
-      <Link to='/events'>
+      <Link to='/events' className='events_feed'>
 <span>
     {output}   
 </span>     

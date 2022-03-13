@@ -49,6 +49,11 @@
   margin: 2em;
 }
 
+.events_feed {
+  text-decoration: none;
+  color: black;
+}
+
 input {
   margin: 1em;
 }
