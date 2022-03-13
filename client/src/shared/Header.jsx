@@ -12,6 +12,9 @@ export default function Header() {
             </NavLink >
         </div>
         <div>
+        <NavLink to='/services' className='events_blog'>
+            SERVICES
+        </NavLink>
         <NavLink to='/events' className='events_blog'>
             EVENTS
         </NavLink>

@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
+import Services from './components/Services';
 import Events from './pages/Events';
 import Blog from './pages/Blog';
 import Control from './components/Control';
@@ -38,6 +39,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route path='/services' element={<Services />}/>
         <Route path='/events' element={<Events />} />
         <Route path='/blog' element={<Blog />}/>
         <Route path='/control' element={<Control />} />
