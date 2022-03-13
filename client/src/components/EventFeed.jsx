@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import Event from "./Event"
 
 export default function EventFeed({expand}) {
@@ -43,9 +44,11 @@ const events = [
         }
     })
   return (
-<div>
-        {output}   
-</div>
+      <Link to='/events'>
+<span>
+    {output}   
+</span>     
+      </Link>
 
   )
 }
