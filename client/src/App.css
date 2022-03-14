@@ -54,6 +54,11 @@
   color: black;
 }
 
+.event {
+  text-decoration: none;
+  color: black;
+}
+
 input {
   margin: 1em;
 }

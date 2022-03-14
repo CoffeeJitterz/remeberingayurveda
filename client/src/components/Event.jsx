@@ -1,10 +1,9 @@
 import Card from "../shared/Card"
-import { useParams } from "react-router-dom"
 
 export default function Event({title, date, description, image, events}) {
   if(!events){
     return (
-      <span>
+      <span className='event'>
         <Card>
           <h3>{title}</h3>
           <h5>{date}</h5>
@@ -15,7 +14,7 @@ export default function Event({title, date, description, image, events}) {
     )
   } else {
     return (
-      <span>
+      <span className='event'>
         <Card>
           <h3>{title}</h3>
           <h5>{date}</h5>
