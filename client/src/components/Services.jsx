@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 import Card from '../shared/Card'
 
 export default function Services({ expand }) {
@@ -15,12 +17,14 @@ export default function Services({ expand }) {
       )
       case false:
         return (
-          <div>
-          <h1>Services</h1>
-          <Card>
-            <p>These Are my services!</p>
-          </Card>
-      </div>
+          <Link to='services'>
+            <div>
+              <h1>Services</h1>
+              <Card>
+                <p>These Are my services!</p>
+              </Card>
+            </div>         
+          </Link>
         )
   }
 }

@@ -1,4 +1,4 @@
-import {Link, useParams} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Event from "./Event"
 
 export default function EventFeed( { expand, events } ) {
