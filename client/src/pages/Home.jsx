@@ -9,7 +9,7 @@ export default function Home() {
     <div>
         <Header />
         <Card>
-        <About />
+        <About expand={null}/>
         <Services />
         <h3>Upcoming Events!</h3>
         <EventFeed expand={null}/>

@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Services from './components/Services';
 import Events from './pages/Events';
-import About from './components/About'
+import AboutPage from './pages/AboutPage'
 import Blog from './pages/Blog';
 import Control from './components/Control';
 import EventPanel from './components/EventPanel';
@@ -42,7 +42,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route path='/services' element={<Services />}/>
         <Route path='/events' element={<Events />} />
-        <Route path='/about' element={<About />}/>
+        <Route path='/about' element={<AboutPage />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/control' element={<Control />} />
         <Route path='/eventpanel' element={<EventPanel />} />
