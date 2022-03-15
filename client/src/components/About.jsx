@@ -8,6 +8,7 @@ export default function About({ expand }) {
     return (
       <Link to='/about'>
       <div>
+        <h1>About</h1>
           <Card>
               <h2>This Is Who We Are</h2>
               <h6>Image Placeholder</h6>
