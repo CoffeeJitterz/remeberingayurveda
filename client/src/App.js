@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
-import Services from './components/Services';
+import ServicesPage from './pages/ServicesPage';
 import Events from './pages/Events';
 import AboutPage from './pages/AboutPage'
 import Blog from './pages/Blog';
@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/services' element={<Services />}/>
+        <Route path='/services' element={<ServicesPage />}/>
         <Route path='/events' element={<Events />} />
         <Route path='/about' element={<AboutPage />}/>
         <Route path='/blog' element={<Blog />}/>
