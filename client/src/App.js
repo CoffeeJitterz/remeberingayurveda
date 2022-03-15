@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import ServicesPage from './pages/ServicesPage';
-import Events from './pages/Events';
+import EventsPage from './pages/EventsPage';
 import AboutPage from './pages/AboutPage'
 import Blog from './pages/Blog';
 import Control from './components/Control';
@@ -39,9 +39,9 @@ function App() {
     <Router>
     <div className="App">
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Home events={events}/>} />
         <Route path='/services' element={<ServicesPage />}/>
-        <Route path='/events' element={<Events />} />
+        <Route path='/events' element={<EventsPage events={events} />} />
         <Route path='/about' element={<AboutPage />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/control' element={<Control />} />
