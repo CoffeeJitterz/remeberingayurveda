@@ -5,7 +5,7 @@ export default function ServicesPage() {
   return (
     <div>
         <Header />
-        <Services />
+        <Services expand={true}/>
     </div>
   )
 }
