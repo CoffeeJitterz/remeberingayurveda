@@ -11,6 +11,13 @@ const params = useParams()
 const output = blogs[params.id]
 
   return (
-    <div>BlogPage</div>
+    <div>
+        <Header />
+        <Blog 
+        title={output.title}
+        date={output.date}
+        body={output.body}
+        />
+    </div>
   )
 }

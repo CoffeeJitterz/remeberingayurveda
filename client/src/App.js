@@ -37,15 +37,18 @@ function App() {
 ]
 
 const blogs = [
-  {title: 'Post 1',
+  {id: 0,
+   title: 'Post 1',
    date: 'Saturday Febuary 19th 2022',
    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
   },
-  {title: 'Post 2',
+  {id: 1,
+   title: 'Post 2',
    date: 'Saturday Febuary 19th 2022',
    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
   },
-  {title: 'Post 3',
+  {id: 2,
+   title: 'Post 3',
    date: 'Saturday Febuary 19th 2022',
    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
   }

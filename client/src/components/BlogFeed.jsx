@@ -4,18 +4,21 @@ import Blog from "./Blog"
 
 export default function BlogFeed( { blogs } ) {
 
-const output = blogs.map((item) => {
-    return <Blog 
-    title={item.title}
-    date={item.date}
-    body={item.body}
-    />
+const output = blogs.map(blog => {
+    return (
+      <Link to={`/blog/${blog.id}`}>
+        <Blog 
+        title={blog.title}
+        date={blog.date}
+        body={blog.body}
+        />
+      </Link>
+      )     
 })
 
   return (
-<div>
-   {output}
-</div>
-
+  <span>
+    {output}
+  </span>
   )
 }
