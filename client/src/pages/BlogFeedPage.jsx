@@ -2,7 +2,7 @@ import Header from "../shared/Header"
 import Card from "../shared/Card"
 import BlogFeed from "../components/BlogFeed"
 
-export default function Blog() {
+export default function BlogFeedPage() {
   return (
     <div>
         <Header />

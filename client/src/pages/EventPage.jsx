@@ -1,6 +1,7 @@
+import { useParams } from "react-router-dom"
+
 import Event from "../components/Event"
 import Header from "../shared/Header"
-import { useParams } from "react-router-dom"
 
 export default function EventPage( {events} ) {
 
