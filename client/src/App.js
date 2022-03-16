@@ -2,13 +2,13 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import ServicesPage from './pages/ServicesPage';
 import EventsFeedPage from './pages/EventsFeedPage';
-import AboutPage from './pages/AboutPage'
-import Blog from './pages/BlogFeedPage';
-import Control from './components/Control';
-import EventPanel from './components/EventPanel';
 import EventPage from './pages/EventPage';
-import './App.css';
+import EventPanel from './components/EventPanel';
+import AboutPage from './pages/AboutPage'
 import BlogFeedPage from './pages/BlogFeedPage';
+import BlogPage from './pages/BlogPage';
+import Control from './components/Control';
+import './App.css';
 
 function App() {
 
@@ -36,6 +36,22 @@ function App() {
     }
 ]
 
+const blogs = [
+  {title: 'Post 1',
+   date: 'Saturday Febuary 19th 2022',
+   body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
+  },
+  {title: 'Post 2',
+   date: 'Saturday Febuary 19th 2022',
+   body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
+  },
+  {title: 'Post 3',
+   date: 'Saturday Febuary 19th 2022',
+   body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
+  }
+
+] 
+
   return (
     <Router>
     <div className="App">
@@ -43,9 +59,10 @@ function App() {
         <Route exact path='/' element={<Home events={events}/>} />
         <Route path='/services' element={<ServicesPage />}/>
         <Route path='/events' element={<EventsFeedPage events={events} />} />
-        <Route path={`/events/:id`} element={<EventPage events={events}/>}/>
+        <Route path='/events/:id' element={<EventPage events={events}/>}/>
         <Route path='/eventpanel' element={<EventPanel />} />
-        <Route path='/blog' element={<BlogFeedPage />}/>
+        <Route path='/blog' element={<BlogFeedPage blogs={blogs} />}/>
+        <Route path='/blog/:id' element={<BlogPage blogs={blogs}/>}/>
         <Route path='/about' element={<AboutPage />}/>
         <Route path='/control' element={<Control />} />
       </Routes>

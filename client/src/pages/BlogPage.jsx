@@ -6,7 +6,7 @@ import Blog from "../components/Blog"
 
 export default function BlogPage( { blogs } ) {
 
-params = useParams()
+const params = useParams()
 
 const output = blogs[params.id]
 
