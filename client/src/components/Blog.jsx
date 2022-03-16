@@ -1,3 +1,5 @@
+
+
 import Card from "../shared/Card"
 
 export default function Blog({title, date, body}) {

@@ -1,12 +1,9 @@
 import {Link} from 'react-router-dom'
+
 import Event from "./Event"
 
 export default function EventFeed( { expand, events } ) {
-
-// const events = [
-// {title, date, description, image}
-// ] 
-
+    
     const output = events.map((event) => {   
         if (expand) {
             return (
