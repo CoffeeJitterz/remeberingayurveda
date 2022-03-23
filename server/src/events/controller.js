@@ -1,7 +1,8 @@
 const pool = require('../../db')
+const queries = require('./queries')
 
 const getEvents = (req, res) => {
-    pool.query('SELECT * FROM EVENTS', (error, results) => {
+    pool.query(queries.getEvents, (error, results) => {
         if (error) throw error
         res.status(200).json(results.rows)
     })
