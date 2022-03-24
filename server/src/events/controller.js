@@ -17,7 +17,17 @@ const getEventById = (req, res) => {
     })
 }
 
+const addEvent = (req, res) => {
+    const { title, date, description, image } = req.body
+
+    pool.query(queries.addEvent, [title, date, description, image], (error, results) => {
+        if (error) throw error
+        res.status(201).send('New Event Created!')
+    })
+}
+
 module.exports = {
     getEvents,
     getEventById,
+    addEvent,
 }
