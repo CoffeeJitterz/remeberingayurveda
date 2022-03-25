@@ -38,9 +38,22 @@ const updateBlog = (req, res) => {
     }) 
 } 
 
+const deleteBlog = (req, res) => {
+    const id = req.params.id
+    pool.query(queries.getBlogsById, [id], (error, results) => {
+        if (!results.rows.length) {
+            res.send(`Blog Post ${id} Does Not Exist In The Database`)
+        }
+        pool.query(queries.deleteBlog, [id], (error, results) => {
+            res.send(`Blog Post ${id} Deleted!`)
+        })
+    })
+}
+
 module.exports = {
     getBlogs,
     getBlogsById,
     addBlog,
     updateBlog,
+    deleteBlog,
 }
