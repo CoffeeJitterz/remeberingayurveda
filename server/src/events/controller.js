@@ -26,8 +26,17 @@ const addEvent = (req, res) => {
     })
 }
 
+const deleteEvent = (req, res) => {
+    const id = parseInt(req.params.id)
+    pool.query(queries.deleteEvent, [id], (error, results) => {
+        if (error) throw error
+        res.status(200).send(`event ${id} Deleted`)
+    })
+}
+
 module.exports = {
     getEvents,
     getEventById,
     addEvent,
+    deleteEvent,
 }
