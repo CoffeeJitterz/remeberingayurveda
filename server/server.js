@@ -6,6 +6,7 @@ const blogRoutes = require('./src/blogs/routes')
 const app = express()
 const port = 3005
 
+//middlewear 
 app.use(express.json())
 app.use(cors())
 

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import axios from 'axios';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
@@ -17,6 +18,8 @@ function App() {
   axios.get('http://localhost:3005/api/events').then (resp => {
     console.log(resp.data)
   })
+
+  
 
   const events = [
     {
