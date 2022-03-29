@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const eventRoutes = require('./src/events/routes')
 const blogRoutes = require('./src/blogs/routes')
 
@@ -6,6 +7,7 @@ const app = express()
 const port = 3005
 
 app.use(express.json())
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.send('Remembering Aurveda')

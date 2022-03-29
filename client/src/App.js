@@ -1,3 +1,4 @@
+import axios from 'axios';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import ServicesPage from './pages/ServicesPage';
@@ -10,7 +11,12 @@ import BlogPage from './pages/BlogPage';
 import Control from './components/Control';
 import './App.css';
 
+
 function App() {
+
+  axios.get('http://localhost:3005/api/events').then (resp => {
+    console.log(resp.data)
+  })
 
   const events = [
     {
