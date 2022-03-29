@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
@@ -15,35 +15,40 @@ import './App.css';
 
 function App() {
 
-  axios.get('http://localhost:3005/api/events').then (resp => {
-    console.log(resp.data)
+  const [events, setEvents] = useState('default')
+
+  useEffect(() => {
+    axios.get('http://localhost:3005/api/events').then (resp => {
+      setEvents(resp.data)
+    }, [])
   })
 
   
 
-  const events = [
-    {
-        id: 0,
-        title: 'Awesome Event 1',
-        date: '06/03/2022',
-        description: "It's an awesome event in the park it's gonna be awesome!",
-        image: 'image 1'
-    },
-    {
-        id: 1,
-        title: 'Awesome Event 2',
-        date: '16/10/2022',
-        description: "It's an awesome event in the park it's gonna be awesome!",
-        image: 'image 2'
-    },
-    {
-        id: 2,
-        title: 'Awesome Event 3',
-        date: '16/17/2022',
-        description: "It's an awesome event in the park it's gonna be awesome!",
-        image: 'image 3'
-    }
-]
+
+//   const events = [
+//     {
+//         id: 0,
+//         title: 'Awesome Event 1',
+//         date: '06/03/2022',
+//         description: "It's an awesome event in the park it's gonna be awesome!",
+//         image: 'image 1'
+//     },
+//     {
+//         id: 1,
+//         title: 'Awesome Event 2',
+//         date: '16/10/2022',
+//         description: "It's an awesome event in the park it's gonna be awesome!",
+//         image: 'image 2'
+//     },
+//     {
+//         id: 2,
+//         title: 'Awesome Event 3',
+//         date: '16/17/2022',
+//         description: "It's an awesome event in the park it's gonna be awesome!",
+//         image: 'image 3'
+//     }
+// ]
 
 const blogs = [
   {id: 0,
