@@ -15,16 +15,16 @@ import './App.css';
 
 function App() {
 
-  const [events, setEvents] = useState('default')
+  const [events, setEvents] = useState(null)
 
   useEffect(() => {
     axios.get('http://localhost:3005/api/events').then (resp => {
       setEvents(resp.data)
-    }, [])
-  })
+    })
+  }, [])
 
   
-
+if(events){console.log(events)}
 
 //   const events = [
 //     {
@@ -75,7 +75,7 @@ const blogs = [
       <Routes>
         <Route exact path='/' element={<Home events={events}/>} />
         <Route path='/services' element={<ServicesPage />}/>
-        <Route path='/events' element={<EventsFeedPage events={events} />} />
+        {events && <Route path='/events' element={<EventsFeedPage events={events} />} />}
         <Route path='/events/:id' element={<EventPage events={events}/>}/>
         <Route path='/eventpanel' element={<EventPanel />} />
         <Route path='/blog' element={<BlogFeedPage blogs={blogs} />}/>
