@@ -1,7 +1,7 @@
 import Header from '../shared/Header'
 import Services from '../components/Services'
 import Card from '../shared/Card'
-import About from '../components/About'
+import Bio from '../components/Bio'
 import EventFeed from '../components/EventFeed'
 
 
@@ -27,7 +27,7 @@ export default function Home( { events } ) {
             <p>“The Ayurvedic Route to great health involves 
                 two simple steps - Doing less and being more” 
             </p>
-          <About expand={false}/>          
+        <Bio expand={false}/>          
         <Services expand={false} />
         {events && <EventFeed expand={null} events={events}/>}
         </Card>

@@ -18,8 +18,8 @@ export default function Header() {
         <NavLink to='/events' className='events_blog_about'>
             EVENTS
         </NavLink>
-        <NavLink to='/about' className='events_blog_about'>
-            ABOUT
+        <NavLink to='/bio' className='events_blog_about'>
+            BIO
         </NavLink>
         <NavLink to='/blogs' className='events_blog_about'>
             BLOG

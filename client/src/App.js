@@ -6,7 +6,7 @@ import ServicesPage from './pages/ServicesPage';
 import EventsFeedPage from './pages/EventsFeedPage';
 import EventPage from './pages/EventPage';
 import EventPanel from './components/EventPanel';
-import AboutPage from './pages/AboutPage'
+import BioPage from './pages/BioPage'
 import BlogFeedPage from './pages/BlogFeedPage';
 import BlogPage from './pages/BlogPage';
 import Control from './components/Control';
@@ -85,7 +85,7 @@ if(blogs){console.log(`Blogs: ${blogs}`)}
         <Route path='/eventpanel' element={<EventPanel />} />
         <Route path='/blogs' element={<BlogFeedPage blogs={blogs} />}/>
         <Route path='/blogs/:id' element={<BlogPage blogs={blogs}/>}/>
-        <Route path='/about' element={<AboutPage />}/>
+        <Route path='/bio' element={<BioPage />}/>
         <Route path='/control' element={<Control />} />
       </Routes>
     </div>

@@ -8,8 +8,8 @@ export default function Services({ expand }) {
     case true:
       return (
         <div>
-        <h1>Services</h1>
         <Card>
+        <h1>Services</h1>
           <h4>15 minute Discovery Call</h4>
           <h6>Free</h6>
             <p>This appointment takes place over the phone. 
@@ -54,12 +54,16 @@ export default function Services({ expand }) {
             <div>
               <h1>Services</h1>
               <Card>
-                <h4>15 minute Discovery Call</h4>
-                <h6>Free</h6>
-                <h4>Initial Intake Consultation and Report of Findings Consultation </h4>
-                <h6>2 hours and 1 hour $95.00</h6>
-                <h4>Follow Up Visits</h4>
-                <h6>1 hour $60.00 (price can decrease over time with the treatment plan)</h6>
+                <h2>15 minute Discovery Call</h2>
+                <h4>Free</h4>
+              </Card>
+              <Card>
+                <h2>Initial Intake Consultation and Report of Findings Consultation </h2>
+                <h4>2 hours and 1 hour $95.00</h4>
+              </Card>
+              <Card>
+                <h2>Follow Up Visits</h2>
+                <h4>1 hour $60.00 (price can decrease over time with the treatment plan)</h4>
               </Card>
             </div>         
           </Link>
