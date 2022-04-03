@@ -21,7 +21,7 @@ export default function Header() {
         <NavLink to='/about' className='events_blog_about'>
             ABOUT
         </NavLink>
-        <NavLink to='/blog' className='events_blog_about'>
+        <NavLink to='/blogs' className='events_blog_about'>
             BLOG
         </NavLink>
         </div>

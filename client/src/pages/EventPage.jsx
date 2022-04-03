@@ -7,17 +7,18 @@ export default function EventPage( {events} ) {
 
   const params = useParams()
 
+  console.log(events[params.id])
+  
   const output = events[params.id]
-
   return (
     <div>
         <Header />
-        <Event events={events} 
+        {events && <Event events={events} 
               title={output.title}
               date={output.date}
               description={output.description}
               image={output.image}
-              />
+              />}
     </div>
   )
 }
