@@ -68,5 +68,6 @@ export default function Services({ expand }) {
             </div>         
           </Link>
         )
+        default:
   }
 }

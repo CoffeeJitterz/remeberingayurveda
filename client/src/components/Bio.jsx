@@ -12,7 +12,7 @@ export default function Bio({ expand }) {
       <div>
           <Card>
           <h1>BIO</h1>
-          <img src={bioImage} height={400}/>
+          <img src={bioImage} height={400} alt='alt'/>
               <p>
               <b>Chloe Chaput</b> is a Clinical Ayurvedic Specialist 
               Intern, Reiki practitioner and dedicated yogi. 
@@ -54,7 +54,7 @@ export default function Bio({ expand }) {
       <div>
           <Card>
         <h1>BIO</h1>
-          <img src={bioImage} height={400}/>
+          <img src={bioImage} height={400} alt='alt'/>
               <p>
               <b>Chloe Chaput</b> is a Clinical Ayurvedic Specialist 
               Intern, Reiki practitioner and dedicated yogi. 
@@ -78,5 +78,6 @@ export default function Bio({ expand }) {
       </div>      
       </Link>
     )
+    default:
   }
 }
