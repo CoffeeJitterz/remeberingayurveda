@@ -8,22 +8,22 @@ export default function EventFeed( { expand, events } ) {
         if (expand) {
             return (
             <Link to={`/events/${event.id}`} className='events_feed'>
-            <Event
+            {events && <Event
             title={event.title}
             date={event.date}
             description={event.description}
             image={event.image}
-            />         
+            />}         
             </Link>
             
             )
         } else {
             return (
             <Link to={`/events/${event.id}`} className='events_feed'>
-            <Event
+            {events && <Event
             title={event.title}
             date={event.date}
-            />
+            />}
             </Link>
             )
         }
