@@ -50,7 +50,7 @@ export default function Services({ expand }) {
       )
       case false:
         return (
-          <Link to='services'>
+          <Link to='services' className='services'>
             <div>
               <h1>Services</h1>
               <Card>

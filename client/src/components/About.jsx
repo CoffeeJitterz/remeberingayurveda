@@ -22,9 +22,9 @@ export default function About({ expand }) {
     )
     case false :
     return (
-      <Link to='/about'>
+      <Link to='/about' className='bio'>
       <div>
-        <h1>About</h1>
+        <h1>BIO</h1>
           <Card>
               <h2>This Is Who We Are</h2>
               <h6>Image Placeholder</h6>

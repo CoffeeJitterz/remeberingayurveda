@@ -34,6 +34,15 @@
   text-decoration: none;
   margin: .25em;
 }
+.bio {
+  text-decoration: none;
+  color: black;
+}
+
+.services {
+text-decoration: none;
+color: black;
+}
 
 .event_panel_form {
   display: flex;
