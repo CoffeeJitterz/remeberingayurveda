@@ -14,18 +14,22 @@ import './App.css';
 
 
 function App() {
-
   const [events, setEvents] = useState(null)
-
+  const[blogs, setBlogs] = useState(null)
 
   useEffect(() => {
     axios.get('/api/events')
     .then(res => {
       setEvents(res.data)
     })
+    axios.get('/api/blogs')
+    .then(res => {
+      setBlogs(res.data)
+    })
   }, [])
 
 if(events){console.log(`Events: ${events}`)}
+if(blogs){console.log(`Blogs: ${blogs}`)}
 
 //   const events = [
 //     {
@@ -51,24 +55,24 @@ if(events){console.log(`Events: ${events}`)}
 //     }
 // ]
 
-const blogs = [
-  {id: 0,
-   title: 'Post 1',
-   date: 'Saturday Febuary 19th 2022',
-   body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
-  },
-  {id: 1,
-   title: 'Post 2',
-   date: 'Saturday Febuary 19th 2022',
-   body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
-  },
-  {id: 2,
-   title: 'Post 3',
-   date: 'Saturday Febuary 19th 2022',
-   body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
-  }
+// const blogs = [
+//   {id: 0,
+//    title: 'Post 1',
+//    date: 'Saturday Febuary 19th 2022',
+//    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
+//   },
+//   {id: 1,
+//    title: 'Post 2',
+//    date: 'Saturday Febuary 19th 2022',
+//    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
+//   },
+//   {id: 2,
+//    title: 'Post 3',
+//    date: 'Saturday Febuary 19th 2022',
+//    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
+// //   }
 
-] 
+// ] 
 
   return (
     <Router>
@@ -79,8 +83,8 @@ const blogs = [
         {events && <Route path='/events' element={<EventsFeedPage events={events} />} />}
         <Route path='/events/:id' element={<EventPage events={events}/>}/>
         <Route path='/eventpanel' element={<EventPanel />} />
-        <Route path='/blog' element={<BlogFeedPage blogs={blogs} />}/>
-        <Route path='/blog/:id' element={<BlogPage blogs={blogs}/>}/>
+        <Route path='/blogs' element={<BlogFeedPage blogs={blogs} />}/>
+        <Route path='/blogs/:id' element={<BlogPage blogs={blogs}/>}/>
         <Route path='/about' element={<AboutPage />}/>
         <Route path='/control' element={<Control />} />
       </Routes>

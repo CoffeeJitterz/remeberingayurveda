@@ -8,7 +8,7 @@ export default function BlogFeedPage( { blogs } ) {
         <Header />
         <Card>
         <h1>BLOG</h1>
-        <BlogFeed blogs={blogs}/>
+        {blogs && <BlogFeed blogs={blogs}/>}
         </Card>
     </div>
   )
