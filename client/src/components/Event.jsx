@@ -7,7 +7,7 @@ export default function Event( { title, date, description, image, events } ) {
   if (image) {
     const picture = require(`../images/${image}`)
     return (
-      <span className='event'>
+      <span>
         <Card>
           {image && <img src={picture} height={400} />}
           <h3>{title}</h3>
@@ -19,7 +19,7 @@ export default function Event( { title, date, description, image, events } ) {
     )
   }
   return (
-    <span className='event'>
+    <span>
       <Card>
         <h3>{title}</h3>
         <h5>{date}</h5>

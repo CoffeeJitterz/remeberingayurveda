@@ -7,7 +7,7 @@ export default function EventFeed( { expand, events } ) {
     const output = events.map((event) => {   
         if (expand) {
             return (
-            <Link to={`/events/${event.id}`}>
+            <Link to={`/events/${event.id}`} className='events_feed'>
             <Event
             title={event.title}
             date={event.date}
@@ -19,7 +19,7 @@ export default function EventFeed( { expand, events } ) {
             )
         } else {
             return (
-            <Link to={`/events/${event.id}`}>
+            <Link to={`/events/${event.id}`} className='events_feed'>
             <Event
             title={event.title}
             date={event.date}
