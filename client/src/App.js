@@ -17,14 +17,15 @@ function App() {
 
   const [events, setEvents] = useState(null)
 
+
   useEffect(() => {
-    axios.get('http://localhost:3005/api/events').then (resp => {
-      setEvents(resp.data)
+    axios.get('/api/events')
+    .then(res => {
+      setEvents(res.data)
     })
   }, [])
 
-  
-if(events){console.log(events)}
+if(events){console.log(`Events: ${events}`)}
 
 //   const events = [
 //     {

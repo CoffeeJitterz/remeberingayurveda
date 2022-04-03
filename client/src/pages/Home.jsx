@@ -13,7 +13,7 @@ export default function Home( { events } ) {
         <Card>
           <About expand={false}/>          
         <Services expand={false} />
-        <EventFeed expand={null} events={events}/>
+        {events && <EventFeed expand={null} events={events}/>}
         </Card>
     </div>
   )

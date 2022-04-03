@@ -4,13 +4,13 @@ const eventRoutes = require('./src/events/routes')
 const blogRoutes = require('./src/blogs/routes')
 
 const app = express()
-const port = 3005
+const port = process.env.PORT || 3001
 
 //middlewear 
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send('Remembering Aurveda')
 })
 
