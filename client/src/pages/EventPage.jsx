@@ -14,6 +14,7 @@ export default function EventPage( {events} ) {
     <div>
         <Header />
         {events && <Event events={events} 
+              key={output.id}
               title={output.title}
               date={output.date}
               description={output.description}

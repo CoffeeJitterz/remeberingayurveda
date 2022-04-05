@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom'
 import Event from "./Event"
 
 export default function EventFeed( { expand, events } ) {
-    
     const output = events.map((event) => {   
         if (expand) {
             return (
             <Link to={`/events/${event.id}`} className='events_feed'>
             {events && <Event
+            key={event.id}
             title={event.title}
             date={event.date}
             description={event.description}
@@ -21,6 +21,7 @@ export default function EventFeed( { expand, events } ) {
             return (
             <Link to={`/events/${event.id}`} className='events_feed'>
             {events && <Event
+            key={event.id}
             title={event.title}
             date={event.date}
             />}

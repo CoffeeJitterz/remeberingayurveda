@@ -13,7 +13,8 @@ const output = blogs[params.id]
   return (
     <div>
         <Header />
-        <Blog 
+        <Blog
+        key={output.id}
         title={output.title}
         date={output.date}
         body={output.body}

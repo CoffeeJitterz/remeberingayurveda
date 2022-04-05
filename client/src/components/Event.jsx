@@ -2,7 +2,6 @@ import Card from "../shared/Card"
 
 
 export default function Event( { title, date, description, image, events } ) {
-  console.log(image)
   if (image) {
     const picture = require(`../images/${image}`)
     return (

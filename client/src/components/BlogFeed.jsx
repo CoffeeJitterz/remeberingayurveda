@@ -8,6 +8,7 @@ const output = blogs.map(blog => {
     return (
       <Link to={`/blogs/${blog.id}`}>
         <Blog 
+        key={blog.id}
         title={blog.title}
         date={blog.date}
         body={blog.body}
