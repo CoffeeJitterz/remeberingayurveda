@@ -8,9 +8,9 @@ export default function BlogPage( { blogs } ) {
 
 const params = useParams()
 
-const output = blogs[params.blog_id]
+const output = blogs[params.blog_id - 1]
 console.log(blogs[params.blog_id])
-
+console.log(blogs[0])
 
   return (
     <div>
