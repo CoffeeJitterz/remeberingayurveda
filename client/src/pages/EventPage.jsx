@@ -7,7 +7,7 @@ export default function EventPage( {events} ) {
 
   const params = useParams()
 
-  console.log(events[params.event_id])
+  console.log(params)
   
   const output = events[params.event_id]
   return (
