@@ -1,14 +1,12 @@
 import {NavLink} from 'react-router-dom'
+const logo = require('../images/logo.png')
 
 export default function Header() {
   return (
     <div className='header'>
         <div>
             <NavLink to='/' className='remembering'>
-        Remembering
-            </NavLink >
-            <NavLink to='/' className='ayurveda'>
-        Ayurveda
+            <img src={logo} width={600} alt='alt'/>
             </NavLink >
         </div>
         <div>
