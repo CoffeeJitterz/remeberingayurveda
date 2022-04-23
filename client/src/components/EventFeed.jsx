@@ -6,9 +6,9 @@ export default function EventFeed( { expand, events } ) {
     const output = events.map((event) => {   
         if (expand) {
             return (
-            <Link to={`/events/${event.id}`} className='events_feed'>
+            <Link to={`/events/${event.event_id}`} className='events_feed'>
             {events && <Event
-            key={event.id}
+            key={event.event_id}
             title={event.title}
             date={event.date}
             description={event.description}
@@ -19,9 +19,9 @@ export default function EventFeed( { expand, events } ) {
             )
         } else {
             return (
-            <Link to={`/events/${event.id}`} className='events_feed'>
+            <Link to={`/events/${event.event_id}`} className='events_feed'>
             {events && <Event
-            key={event.id}
+            key={event.event_id}
             title={event.title}
             date={event.date}
             />}
