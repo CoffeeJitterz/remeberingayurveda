@@ -6,7 +6,7 @@
 .card {
   margin: 1em;
   padding: 2em;
-  border: 2px solid black;
+  border: 6px solid rgb(127, 0, 255);
   border-radius: 5px;
 }
 
