@@ -31,49 +31,6 @@ function App() {
 if(events){console.log(`Events: ${events}`)}
 if(blogs){console.log(`Blogs: ${blogs}`)}
 
-//   const events = [
-//     {
-//         id: 0,
-//         title: 'Awesome Event 1',
-//         date: '06/03/2022',
-//         description: "It's an awesome event in the park it's gonna be awesome!",
-//         image: 'image 1'
-//     },
-//     {
-//         id: 1,
-//         title: 'Awesome Event 2',
-//         date: '16/10/2022',
-//         description: "It's an awesome event in the park it's gonna be awesome!",
-//         image: 'image 2'
-//     },
-//     {
-//         id: 2,
-//         title: 'Awesome Event 3',
-//         date: '16/17/2022',
-//         description: "It's an awesome event in the park it's gonna be awesome!",
-//         image: 'image 3'
-//     }
-// ]
-
-// const blogs = [
-//   {id: 0,
-//    title: 'Post 1',
-//    date: 'Saturday Febuary 19th 2022',
-//    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
-//   },
-//   {id: 1,
-//    title: 'Post 2',
-//    date: 'Saturday Febuary 19th 2022',
-//    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
-//   },
-//   {id: 2,
-//    title: 'Post 3',
-//    date: 'Saturday Febuary 19th 2022',
-//    body: 'This is the sort of content which would be viewed here if you were to take the time to read it.'
-// //   }
-
-// ] 
-
   return (
     <Router>
     <div className="App">

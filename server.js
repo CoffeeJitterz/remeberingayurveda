@@ -27,7 +27,7 @@ app.get('/api', (req, res) => {
 app.use('/api/events', eventRoutes)
 app.use('/api/blogs', blogRoutes)
 
-app.get('*', (req, res) => {
-    res.redirect('/')
-})
+// app.get('*', (req, res) => {
+//     res.redirect('/')
+// })
 app.listen(port, () => console.log(`Remembering_Aurveda is running on port ${port}`))
