@@ -9,6 +9,9 @@ export default function BlogPage( { blogs } ) {
 const params = useParams()
 
 const output = blogs[params.blog_id]
+console.log(output)
+console.log(params)
+console.log(params.blog_id)
 
   return (
     <div>
