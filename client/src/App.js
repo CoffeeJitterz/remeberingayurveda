@@ -38,10 +38,10 @@ if(blogs){console.log(`Blogs: ${blogs}`)}
         <Route exact path='/' element={<Home events={events}/>} />
         <Route path='/services' element={<ServicesPage />}/>
         {events && <Route path='/events' element={<EventsFeedPage events={events} />} />}
-        <Route path='/events/:id' element={<EventPage events={events}/>}/>
+        <Route path='/events/:event_id' element={<EventPage events={events}/>}/>
         <Route path='/eventpanel' element={<EventPanel />} />
         <Route path='/blogs' element={<BlogFeedPage blogs={blogs} />}/>
-        <Route path='/blogs/:id' element={<BlogPage blogs={blogs}/>}/>
+        <Route path='/blogs/:blog_id' element={<BlogPage blogs={blogs}/>}/>
         <Route path='/bio' element={<BioPage />}/>
         <Route path='/control' element={<Control />} />
       </Routes>
