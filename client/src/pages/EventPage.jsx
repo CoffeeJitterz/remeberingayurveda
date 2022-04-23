@@ -7,8 +7,6 @@ export default function EventPage( {events} ) {
 
   const params = useParams()
 
-  console.log(params)
-  
   const output = events[params.event_id]
   return (
     <div>
