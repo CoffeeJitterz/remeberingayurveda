@@ -8,13 +8,13 @@ export default function BlogPage( { blogs } ) {
 
 const params = useParams()
 
-const output = blogs[params.id]
+const output = blogs[params.blog_id]
 
   return (
     <div>
         <Header />
         <Blog
-        key={output.id}
+        key={output.blog_id}
         title={output.title}
         date={output.date}
         body={output.body}

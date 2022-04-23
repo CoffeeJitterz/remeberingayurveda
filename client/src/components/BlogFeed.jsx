@@ -6,9 +6,9 @@ export default function BlogFeed( { blogs } ) {
 
 const output = blogs.map(blog => {
     return (
-      <Link to={`/blogs/${blog.id}`}>
+      <Link to={`/blogs/${blog.blog_id}`}>
         <Blog 
-        key={blog.id}
+        key={blog.blog_id}
         title={blog.title}
         date={blog.date}
         body={blog.body}
