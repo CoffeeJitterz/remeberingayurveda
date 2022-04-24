@@ -2,6 +2,12 @@ import {NavLink} from 'react-router-dom'
 const logo = require('../images/logo.png')
 
 export default function Header() {
+
+const navColor = ({ isActive }) =>
+isActive
+  ? { color: 'black', fontSize: 'xx-large', fontWeight: 'bold'}
+  : { color: 'rgb(127, 0, 255)'}
+
   return (
     <div className='header'>
         <div>
@@ -10,16 +16,16 @@ export default function Header() {
             </NavLink >
         </div>
         <div>
-        <NavLink to='/services' className='events_blog_about'>
+        <NavLink to='/services' className='events_blog_about' style={navColor}>
             SERVICES
         </NavLink>
-        <NavLink to='/events' className='events_blog_about'>
+        <NavLink to='/events' className='events_blog_about' style={navColor}>
             EVENTS
         </NavLink>
-        <NavLink to='/bio' className='events_blog_about'>
+        <NavLink to='/bio' className='events_blog_about' style={navColor}>
             BIO
         </NavLink>
-        <NavLink to='/blogs' className='events_blog_about'>
+        <NavLink to='/blogs' className='events_blog_about' style={navColor}>
             BLOG
         </NavLink>
         </div>

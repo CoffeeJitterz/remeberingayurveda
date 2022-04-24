@@ -11,9 +11,10 @@ export default function Bio({ expand }) {
     return (
       <div>
           <Card>
-          <h1>BIO</h1>
+            <div className='bio_container'>
           <img src={bioImage} height={400} alt='alt'/>
-              <p>
+              <div>
+              <p className='bio'>
               <b>Chloe Chaput</b> is a Clinical Ayurvedic Specialist 
               Intern, Reiki practitioner and dedicated yogi. 
               Chloe has been studying Ayurveda, a complete healthcare 
@@ -33,7 +34,7 @@ export default function Bio({ expand }) {
               of self-study to bring holistic health.
               </p>
               <h1>My Approach</h1>
-              <p>
+              <p className='approach'>
               My approach works with individuals to fully understand their 
               constitution, and any states of imbalances, from an Ayurvedic 
               perspective. From this, I create individualised treatment plans 
@@ -45,6 +46,8 @@ export default function Bio({ expand }) {
               their constitution and Ayurvedic approaches to treatment through 
               each step of their journey together.
               </p>
+              </div>
+            </div>
           </Card>
       </div>
     )
@@ -53,7 +56,7 @@ export default function Bio({ expand }) {
       <Link to='/bio' className='bio'>
       <div>
           <Card>
-        <h1>BIO</h1>
+            <div className='bio_container'>
           <img src={bioImage} height={400} alt='alt'/>
               <p>
               <b>Chloe Chaput</b> is a Clinical Ayurvedic Specialist 
@@ -74,6 +77,7 @@ export default function Bio({ expand }) {
               passionate about working with others to apply the science 
               of self-study to bring holistic health.
               </p>
+            </div>
           </Card>
       </div>      
       </Link>
