@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import Card from '../shared/Card'
 
 import Event from "./Event"
 
@@ -20,21 +21,23 @@ export default function EventFeed( { expand, events } ) {
         } else {
             return (
             <Link to={`/events/${event.event_id}`} className='events_feed'>
-            {events && <Event
-            key={event.event_id}
-            title={event.title}
-            date={event.date}
-            />}
+                    {events && <Event
+                    key={event.event_id}
+                    title={event.title}
+                    date={event.date}
+                    />}
             </Link>
             )
         }
     })
   return (
       <Link to='/events' className='events_feed'>
-<span>
-    <h1>Upcoming Events!</h1>
-    {output}   
-</span>     
+          <Card section='events'>
+            <span>
+                <h1>Upcoming Events!</h1>
+                {output}   
+            </span>     
+          </Card>
       </Link>
 
   )

@@ -10,6 +10,7 @@ export default function Services({ expand }) {
         <div>
         <Card section='services'>
         <h1>Services</h1>
+        <Card section='service'>
           <h4>15 minute Discovery Call</h4>
           <h6>Free</h6>
             <p>This appointment takes place over the phone. 
@@ -18,6 +19,8 @@ export default function Services({ expand }) {
                 to see if working with Remembering Ayurveda is right 
                 for you and your holistic health.
             </p>
+        </Card>
+        <Card section='service'>
           <h4>Initial Intake Consultation and Report of Findings Consultation </h4>
           <h6>2 hours and 1 hour $95.00</h6>
             <p>The first step on one's path to optimal health through Clinical 
@@ -36,6 +39,8 @@ export default function Services({ expand }) {
             which will empower you to be able to make choices in your life that will create 
             and sustain optimal health and peace of mind.
             </p>
+        </Card>
+        <Card section='service'>
           <h4>Follow Up Visits</h4>
           <h6>1 hour $60.00 (price can decrease over time with the treatment plan)</h6>
           <p>
@@ -45,6 +50,7 @@ export default function Services({ expand }) {
           and be able to provide creative support as needed. New recommendations will be implemented 
           at the most appropriate time for one's healing journey.
           </p>
+        </Card>
         </Card>
     </div>
       )
