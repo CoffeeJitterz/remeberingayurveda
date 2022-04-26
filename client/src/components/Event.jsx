@@ -7,9 +7,9 @@ export default function Event( { title, date, description, image, events } ) {
     return (
       <span className='event'>
         <Card section='event'>
-          {image && <img src={picture} height={400} alt='alt'/>}
           <h2>{title}</h2>
           <h5>{date}</h5>
+          {image && <img src={picture} height={400} alt='alt'/>}
           <p>{description}</p>
         </Card>
       </span>

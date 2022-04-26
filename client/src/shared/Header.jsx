@@ -12,7 +12,7 @@ isActive
     <div className='header'>
         <div>
             <NavLink to='/' className='remembering'>
-            <img src={logo} width={600} alt='alt'/>
+            <img src={logo} height={120} alt='alt'/>
             </NavLink >
         </div>
         <div>
