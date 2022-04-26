@@ -7,12 +7,12 @@ export default function Services({ expand }) {
   switch (expand) {
     case true:
       return (
-        <div>
+        <div className='services'>
         <Card section='services'>
-        <h1>Services</h1>
+        <h2>Services</h2>
         <Card section='service'>
-          <h4>15 minute Discovery Call</h4>
-          <h6>Free</h6>
+          <h2>15 minute Discovery Call</h2>
+          <h4>Free</h4>
             <p>This appointment takes place over the phone. 
                 It provides the opportunity for you to ask questions 
                 about Ayurveda/ treatment plans/ your cheif concerns 
@@ -21,8 +21,8 @@ export default function Services({ expand }) {
             </p>
         </Card>
         <Card section='service'>
-          <h4>Initial Intake Consultation and Report of Findings Consultation </h4>
-          <h6>2 hours and 1 hour $95.00</h6>
+          <h2>Initial Intake Consultation and Report of Findings Consultation </h2>
+          <h4>2 hours and 1 hour $95.00</h4>
             <p>The first step on one's path to optimal health through Clinical 
               Ayurvedic Care begins with an Initial Consultation. This consultation 
               will include an intake and assessment, followed by a report of findings. 
@@ -41,8 +41,8 @@ export default function Services({ expand }) {
             </p>
         </Card>
         <Card section='service'>
-          <h4>Follow Up Visits</h4>
-          <h6>1 hour $60.00 (price can decrease over time with the treatment plan)</h6>
+          <h2>Follow Up Visits</h2>
+          <h4>1 hour $60.00 (price can decrease over time with the treatment plan)</h4>
           <p>
           Follow up visits provide the time and space to work together with one’s treatment plan. 
           We will routinely check one’s vitals, functional, emotional patterns and the frequency 
@@ -59,7 +59,7 @@ export default function Services({ expand }) {
           <Link to='services' className='services'>
               <Card section='services'>
             <div>
-              <h1>Services</h1>
+              <h2>Services</h2>
               <Card section='service'>
                 <h2>15 minute Discovery Call</h2>
                 <h4>Free</h4>

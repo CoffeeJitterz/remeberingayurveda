@@ -34,7 +34,7 @@ export default function EventFeed( { expand, events } ) {
       <Link to='/events' className='events_feed'>
           <Card section='events'>
             <span>
-                <h1>Upcoming Events!</h1>
+                <h2>Upcoming Events!</h2>
                 {output}   
             </span>     
           </Card>

@@ -1,6 +1,5 @@
 import Header from '../shared/Header'
 import Services from '../components/Services'
-import Card from '../shared/Card'
 import Bio from '../components/Bio'
 import EventFeed from '../components/EventFeed'
 const image = require('../images/what_is_ayurveda.png')
@@ -10,7 +9,6 @@ export default function Home( { events } ) {
   return (
     <div>
         <Header />
-        <Card>
           <img src={image} width='1440' alt='alt'/>
           {/* <h2>What is Ayurveda?</h2>
           <p>Ayurveda is a complete healthcare science, 
@@ -32,7 +30,6 @@ export default function Home( { events } ) {
         <Bio expand={false}/>          
         <Services expand={false} />
         {events && <EventFeed expand={null} events={events}/>}
-        </Card>
     </div>
   )
 }

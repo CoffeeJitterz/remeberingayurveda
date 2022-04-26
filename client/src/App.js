@@ -10,6 +10,7 @@ import BioPage from './pages/BioPage'
 import BlogFeedPage from './pages/BlogFeedPage';
 import BlogPage from './pages/BlogPage';
 import Control from './components/Control';
+import Card from './shared/Card';
 import './App.css';
 
 
@@ -32,6 +33,7 @@ if(events){console.log(`Events: ${events}`)}
 if(blogs){console.log(`Blogs: ${blogs}`)}
 
   return (
+    <Card>
     <Router>
     <div className="App">
       <Routes>
@@ -47,6 +49,7 @@ if(blogs){console.log(`Blogs: ${blogs}`)}
       </Routes>
     </div>
     </Router>
+    </Card>
   );
 }
 

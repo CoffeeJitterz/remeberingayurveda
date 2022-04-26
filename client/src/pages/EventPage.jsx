@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 
 import Event from "../components/Event"
 import Header from "../shared/Header"
+import Card from "../shared/Card"
 
 export default function EventPage( {events} ) {
 

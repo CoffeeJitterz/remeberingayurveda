@@ -5,7 +5,7 @@
 
 .card {
   margin: 1em;
-  padding: 2em;
+  padding: 1em;
   border: 6px solid rgb(127, 0, 255);
   border-radius: 5px;
 }
@@ -13,27 +13,23 @@
 .card-service {
   margin: 1em;
   padding: 2em;
-  border-radius: 5px;
   background-color: rgb(189, 124, 255);
 }
 
 .card-services {
 
   padding: 1em;
-  border-radius: 5px;
   background-color: rgb(217, 179, 255);
 }
 
 .card-event{
   margin: 1em;
   padding:3em;
-  border-radius: 5px;
   background-color: rgb(125, 236, 218);
 }
 .card-events{
 
   padding: 2em;
-  border-radius: 5px;
   background-color: rgb(175, 255, 242);
 }
 .header {
@@ -43,7 +39,8 @@
   align-items:flex-end;
   padding: .75em;
   font-size: x-large;
-  
+  background-color: rgb(255, 255, 123);
+  border: 3px solid rgb(221, 221, 105);
 }
 .remembering {
   text-decoration: none;
@@ -67,6 +64,7 @@
 
 .services {
 text-decoration: none;
+font-size: x-large;
 color: black;
 }
 
@@ -91,7 +89,8 @@ color: black;
 
 .event {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
 }
 
 input {
