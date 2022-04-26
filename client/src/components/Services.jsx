@@ -8,7 +8,7 @@ export default function Services({ expand }) {
     case true:
       return (
         <div>
-        <Card>
+        <Card section='services'>
         <h1>Services</h1>
           <h4>15 minute Discovery Call</h4>
           <h6>Free</h6>
@@ -51,21 +51,23 @@ export default function Services({ expand }) {
       case false:
         return (
           <Link to='services' className='services'>
+              <Card section='services'>
             <div>
               <h1>Services</h1>
-              <Card>
+              <Card section='service'>
                 <h2>15 minute Discovery Call</h2>
                 <h4>Free</h4>
               </Card>
-              <Card>
+              <Card section='service'>
                 <h2>Initial Intake Consultation and Report of Findings Consultation </h2>
                 <h4>2 hours and 1 hour $95.00</h4>
               </Card>
-              <Card>
+              <Card section='service'>
                 <h2>Follow Up Visits</h2>
                 <h4>1 hour $60.00 (price can decrease over time with the treatment plan)</h4>
               </Card>
             </div>         
+              </Card>
           </Link>
         )
         default:

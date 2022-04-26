@@ -10,6 +10,20 @@
   border-radius: 5px;
 }
 
+.card-service {
+  margin: 1em;
+  padding: 2em;
+  border-radius: 5px;
+  background-color: rgb(189, 124, 255);
+}
+
+.card-services {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  background-color: rgb(217, 179, 255);
+}
+
 .header {
   display: flex;
   flex-direction: row;
